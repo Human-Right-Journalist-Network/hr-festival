@@ -1,4 +1,45 @@
-export const Navigation = (props) => {
+import React, { useEffect, useState } from "react"
+import axios from "axios"
+
+const Navigation = () => {
+  const baseUrl = "http://localhost:1337"
+  const [navigators, setNavigation] = useState()
+  const [loading, setLoading] = useState(false)
+
+  const fetchNavigator = async () => {
+    let query = `  query{
+      navigators{
+        data{
+          attributes{
+            publishedAt
+            title
+            logo{
+              data{
+                attributes{
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }`;
+
+    let response = await axios.post(`${baseUrl}/graphql`, { query: query })
+    if (response && response !== undefined && response !== null && response.error == null) {
+      setNavigation(response.data.data.navigators);
+      // console.log(response.data.data.navigators);
+      // console.log(response.data.data.navigators.data[6].attributes.logo.data.attributes.url);
+      // console.log(response.data)
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    fetchNavigator()
+  }, [])
+
+
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -16,7 +57,8 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
+            {/* HRJN */}
+            {navigators?.data[6]?.attributes?.title}
           </a>{' '}
         </div>
 
@@ -27,37 +69,36 @@ export const Navigation = (props) => {
           <ul className='nav navbar-nav navbar-right'>
             <li>
               <a href='#features' className='page-scroll'>
-                Features
+                {navigators?.data[0]?.attributes?.title}
+                {/* Feature */}
               </a>
             </li>
             <li>
               <a href='#about' className='page-scroll'>
-                About
-              </a>
-            </li>
-            <li>
-              <a href='#services' className='page-scroll'>
-                Services
+                {navigators?.data[1]?.attributes?.title}
+                
               </a>
             </li>
             <li>
               <a href='#portfolio' className='page-scroll'>
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href='#testimonials' className='page-scroll'>
-                Testimonials
+                {navigators?.data[2]?.attributes?.title}
               </a>
             </li>
             <li>
               <a href='#team' className='page-scroll'>
-                Team
+              {navigators?.data[3]?.attributes?.title}
+              
               </a>
             </li>
+            {/* <li>
+              <a href='#testimonials' className='page-scroll'>
+              {navigators?.data[4]?.attributes?.title}
+              </a>
+            </li> */}
             <li>
               <a href='#contact' className='page-scroll'>
-                Contact
+              {navigators?.data[5]?.attributes?.title}
+              {/* Contact */}
               </a>
             </li>
           </ul>
@@ -66,3 +107,5 @@ export const Navigation = (props) => {
     </nav>
   )
 }
+
+export default Navigation
