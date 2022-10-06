@@ -54,7 +54,9 @@ const Image = ({ title, largeImage, smallImage }) => {
           </div>
             <img
                 // src={smallImage}
-                src={baseUrl + galleries?.data[3]?.attributes?.image?.data?.attributes?.url}
+                src={baseUrl + galleries?.data[2]?.attributes?.image?.data?.attributes?.url}
+                // d?.attributes?.logo?.data?.attributes?.url
+                // src={baseUrl + galleries?.data[1]?.attributes?.image?.data?.attributes?.url}
                 className='img-responsive'
                 alt={title}
               />
@@ -66,9 +68,3 @@ const Image = ({ title, largeImage, smallImage }) => {
 }
 
 export default Image
-
-
-{/* <img
-                  src={baseUrl + d?.attributes?.image?.data?.attributes?.url}
-                  className="team-img"
-                  alt="" />{" "} */}

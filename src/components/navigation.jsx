@@ -90,11 +90,21 @@ const Navigation = () => {
               
               </a>
             </li>
+            <li>
+              <a href='#testimonials' className='page-scroll'>
+              {navigators?.data[7]?.attributes?.title}
+              </a>
+            </li>
             {/* <li>
               <a href='#testimonials' className='page-scroll'>
-              {navigators?.data[4]?.attributes?.title}
+              {navigators?.data[7]?.attributes?.title}
               </a>
             </li> */}
+            {/* <li>
+              <a href='#partners' className='page-scroll'>
+              {navigators?.data[7]?.attributes?.title}
+              </a> 
+            </li>*/}
             <li>
               <a href='#contact' className='page-scroll'>
               {navigators?.data[5]?.attributes?.title}

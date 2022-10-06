@@ -39,6 +39,9 @@ const Contact = () => {
             contact_email
             phone_number
             address
+            facebook
+            twitter
+            instagram
           }
         }
       }
@@ -138,9 +141,9 @@ const Contact = () => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>{header.data?.attributes?.get_in_touch ? header.data?.attributes?.get_in_touch : 'Loading'}</h2>
+                <h2>{header?.data?.attributes?.get_in_touch ? header?.data?.attributes?.get_in_touch : 'Loading'}</h2>
                 <p>
-                  {header.data?.attributes?.get_in_touch_description ? header.data?.attributes?.get_in_touch_description : 'Loading'}
+                  {header?.data?.attributes?.get_in_touch_description ? header?.data?.attributes?.get_in_touch_description : 'Loading'}
                 </p>
               </div>
               <div>
@@ -199,13 +202,13 @@ const Contact = () => {
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>{header.data?.attributes?.contact_info ? header.data?.attributes?.contact_info : 'Loading'}</h3>
+              <h3>{header?.data?.attributes?.contact_info ? header?.data?.attributes?.contact_info : 'Loading'}</h3>
               <p>
                 <span>
                   <i className='fa fa-map-marker'></i> Address
                 </span>
                 {/* {props.data ? props.data.address : 'loading'} */}
-                {header.data?.attributes?.address ? header.data?.attributes?.address : 'Loading'}
+                {header?.data?.attributes?.address ? header.data?.attributes?.address : 'Loading'}
               </p>
             </div>
             <div className='contact-item'>
@@ -213,7 +216,7 @@ const Contact = () => {
                 <span>
                   <i className='fa fa-phone'></i> Phone
                 </span>{' '}
-                {header.data?.attributes?.phone_number ? header.data?.attributes?.phone_number : 'Loading'}
+                {header?.data?.attributes?.phone_number ? header.data?.attributes?.phone_number : 'Loading'}
               </p>
             </div>
             <div className='contact-item'>
@@ -221,8 +224,7 @@ const Contact = () => {
                 <span>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
-                {/* {props.data ? props.data.email : 'loading'} */}
-                {header.data?.attributes?.contact_email ? header.data?.attributes?.contact_email : 'Loading'}
+                {header?.data?.attributes?.contact_email ? header.data?.attributes?.contact_email : 'Loading'}
               </p>
             </div>
           </div>
@@ -231,20 +233,20 @@ const Contact = () => {
               <div className='social'>
                 <ul>
                   <li>
-                    {/* <a href={props.data ? props.data.facebook : '/'}> */}
+                    <a href={header?.data?.attributes?.facebook ? header?.data?.attributes?.facebook : '/'}>
                       <i className='fa fa-facebook'></i>
-                    {/* </a> */}
+                    </a>
                   </li>
                   <li>
-                    {/* <a href={props.data ? props.data.twitter : '/'}> */}
+                    <a href={header?.data?.attributes?.twitter ? header?.data?.attributes?.twitter : '/'}>
                       <i className='fa fa-twitter'></i>
-                    {/* </a> */}
-                  </li>
-                  {/* <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
                     </a>
-                  </li> */}
+                  </li>
+                  <li>
+                    <a href={header?.data?.attributes?.instagram ? header?.data?.attributes?.instagram : '/'}>
+                      <i className='fa fa-instagram'></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

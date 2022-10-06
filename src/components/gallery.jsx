@@ -75,13 +75,7 @@ const Gallery = () => {
             {galleries?.data
               ? galleries?.data?.map((d, i) => (
                 <div key={`${d?.attributes?.title}-${i}`} className='col-sm-6 col-md-4 col-lg-4'>
-                  <Image title={d?.attributes?.title} largeImage={d.largeImage} smallImage={d.smallImage} />
-                  {/* <img 
-                
-                    title={d?.attributes?.title} largeImage={d?.largeImage} smallImage={d?.smallImage}
-                    src={baseUrl + d?.attributes?.image?.data?.attributes?.url}
-                    alt={d?.attributes?.title}
-                  /> */}
+                  <Image title={d?.attributes?.title} largeImage={d?.largeImage} smallImage={d?.smallImage} />
                 </div>
               ))
               : 'Loading...'}

@@ -104,15 +104,6 @@ import axios from 'axios'
                           : "loading"}
                       </ul>
                     </div> 
-                    {/* <div className="col-lg-6 col-sm-6 col-xs-12">
-                      <ul>
-                        {abouts?.data
-                          ? abouts?.data?.attributes?.map((d, i) => (
-                              <li key={`${d}-${i}`}> {d}</li>
-                            ))
-                          : "loading"}
-                      </ul>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -120,26 +111,6 @@ import axios from 'axios'
           </div>
         </div>
       );
-
-  // return(
-    // <div id="about">
-    //   <div className="row">
-    //     <div className="col-xs-12 col-md-6">
-    //       Here
-    //         {/* {about?.data?.attributes[1]?.Image} */}
-    //         {/* {pages[0]?.title} */}
-    //         <img
-    //           src={baseUrl+abouts?.data?.attributes?.Image?.data?.attributes[0]?.url}
-    //           // src={baseUrl+pages[0]?.image.url}
-    //           alt="Cutstruct" 
-    //         />
-    //     </div>
-    //     <div>
-    //     {abouts?.data?.attributes[1]?.title}
-    //     </div>
-    //   </div>
-    // </div>
-  // )
 }
 
 export default About

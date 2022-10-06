@@ -65,7 +65,9 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
-  "Services": [
+
+
+  "Partners": [
     {
       "icon": "fa fa-wordpress",
       "name": "Lorem ipsum dolor",

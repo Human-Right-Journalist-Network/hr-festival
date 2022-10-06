@@ -44,15 +44,14 @@ const Header = () => {
   return (
     <header id='header'>
       <div className='intro '>
-      {/* background: url(../img/intro-bg.jpg) center center no-repeat */}
         <div className='overlay'>
           <div className='container'>
             <div className='row'>
               <div className='col-md-8 col-md-offset-2 intro-text'>
-                <h1>
+                <h2 className="title">
                   {header.data?.attributes?.hero_title ? header.data?.attributes?.hero_title : 'Loading...'}
                   <span></span>
-                </h1>
+                </h2>
                 <p>{header.data?.attributes?.hero_description ? header.data?.attributes?.hero_description : 'Loading'}</p>
                 <a
                   href='#features'
