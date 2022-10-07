@@ -4,7 +4,7 @@ import swal from 'sweetalert';
 
 const Contact = () => {
 
-  const baseUrl = "http://localhost:1337"
+  const baseUrl = "https://aif-festival.herokuapp.com"
   const [contact, setContact] = useState([])
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')

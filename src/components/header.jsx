@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 
 const Header = () => {
-  const baseUrl = "http://localhost:1337"
+  // const baseUrl = "http://localhost:1337"
+  const baseUrl = "https://aif-festival.herokuapp.com"
   const [header, setHeader] = useState({})
   const [loading, setLoading] = useState(false)
 

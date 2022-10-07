@@ -5,7 +5,7 @@ import axios from "axios"
 const Image = ({ title, largeImage, smallImage }) => {
   const [galleries, setGallery] = useState()
   const [loading, setLoading] = useState(false)
-  const baseUrl = "http://localhost:1337"
+  const baseUrl = "https://aif-festival.herokuapp.com"
 
   const fetchGallery = async () => {
     let query = `query{
