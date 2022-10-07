@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 
 const Navigation = () => {
-  const baseUrl = "http://localhost:1337"
+  const baseUrl = "https://aif-festival.herokuapp.com"
   const [navigators, setNavigation] = useState()
   const [loading, setLoading] = useState(false)
 

@@ -4,8 +4,8 @@
 
 export const Partners = (props) => {
     return (
-      <div id='partners' className='text-center'>
-        <div className='container'>
+      const baseUrl = "https://aif-festival.herokuapp.com"
+      <div className='container'>
           <div className='section-title'>
             <h2>Our Services</h2>
             <p>

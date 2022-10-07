@@ -4,7 +4,7 @@ import swal from 'sweetalert';
 
 
 const Testimonials = (props) => {
-  const baseUrl = "http://localhost:1337"
+  const baseUrl = "https://aif-festival.herokuapp.com"
   const [partners, setParners] = useState()
   const [header, setHeader] = useState({})
 

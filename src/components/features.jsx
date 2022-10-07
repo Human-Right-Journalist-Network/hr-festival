@@ -6,7 +6,7 @@ const Features = () => {
   const [features, setFeatures] = useState([])
   const [loading, setLoading] = useState(false)
   const [header, setHeader] = useState({})
-  const baseUrl = "http://localhost:1337"
+  const baseUrl = "https://aif-festival.herokuapp.com"
 
   const fetchHeader = async () => {
     let query = `query{
