@@ -23,6 +23,7 @@ const Team = () => {
     let response = await axios.post(`${baseUrl}/graphql`, { query: query })
     if (response && response !== undefined && response !== null && response.error == null) {
       setHeader(response.data.data.hero);
+      // console.log(response.data.data.hero.data.attributes.Meet_the_team);
     }
   }
 
@@ -51,6 +52,7 @@ const Team = () => {
     if (response && response !== undefined && response !== null && response.error == null) {
       setTeam(response.data.data.teams);
       // console.log(response.data.data.teams);
+      // console.log(response.data.data.teams.data[3].attributes.designation);
       // console.log(response.data)
       setLoading(false)
     }
@@ -77,7 +79,7 @@ const Team = () => {
             <div key={i} className='col-md-3 col-sm-6 team'>
               <div className='thumbnail'>
                 <img
-                  src={baseUrl + d?.attributes?.image?.data?.attributes?.url}
+                  src={d?.attributes?.image?.data?.attributes?.url}
                   className="team-img"
                   alt="" />{" "}
                 <div className='caption'>

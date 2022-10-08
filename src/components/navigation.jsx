@@ -29,8 +29,6 @@ const Navigation = () => {
     if (response && response !== undefined && response !== null && response.error == null) {
       setNavigation(response.data.data.navigators);
       // console.log(response.data.data.navigators);
-      // console.log(response.data.data.navigators.data[6].attributes.logo.data.attributes.url);
-      // console.log(response.data)
       setLoading(false)
     }
   }

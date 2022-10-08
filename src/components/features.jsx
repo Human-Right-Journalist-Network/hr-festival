@@ -67,14 +67,13 @@ const Features = () => {
         <div className='col-md-10 col-md-offset-1 section-title'>
           <h2>{header.data?.attributes?.features ? header.data?.attributes?.features : 'Loading...'}</h2>
         </div>
-        <div className='row'>
+        <div className='row' id="">
           {features?.data
             ? features?.data?.map((d, i) => (
                 <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
                   <img 
-                    src={baseUrl + d?.attributes?.image?.data[0]?.attributes?.url}
+                    src={d?.attributes?.image?.data[0]?.attributes?.url}
                   />
-                  {/* <i className={d.icon}></i> */}
                   <h3>{d?.attributes?.title}</h3>
                   <p>{d?.attributes?.description}</p>
                   

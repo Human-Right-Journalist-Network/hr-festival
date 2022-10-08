@@ -250,9 +250,11 @@ header .intro-text .title{
   font-size: 40px;
   color: #fff;
 }
+
 /* Features Section */
 #features {
   background: #f6f6f6;
+  /* max-width: fit-content; */
 }
 #features i.fa {
   font-size: 38px;

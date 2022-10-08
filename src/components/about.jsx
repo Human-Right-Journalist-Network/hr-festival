@@ -52,10 +52,6 @@ import axios from 'axios'
     let response = await axios.post(`${baseUrl}/graphql`, {query:query})
     if (response && response !== undefined && response !== null && response.error == null) {
       setAbout(response.data.data.abouts);
-      // console.log(response.data.data.abouts.data[0].attributes.title)
-      // console.log("Data shows here!", response.data.data.abouts)
-      // console.log(response.data.data.abouts.data);
-      // console.log(response.data.data.abouts.data[0].attributes.image.data.attributes.url)
       setLoading(false)
     }
   }
@@ -74,7 +70,7 @@ import axios from 'axios'
                   <img 
                     className="img-responsive" 
                     alt=""
-                    src={baseUrl + abouts?.data[0]?.attributes?.image?.data?.attributes?.url}
+                    src={abouts?.data[0]?.attributes?.image?.data?.attributes?.url}
                   />
                 
               </div>
@@ -105,6 +101,8 @@ import axios from 'axios'
                             ))
                           : "loading"}
                       </ul>
+
+                      
                     </div> 
                   </div>
                 </div>

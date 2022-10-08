@@ -29,8 +29,9 @@ const Testimonials = (props) => {
     let result = await axios.post(`${baseUrl}/graphql`, {query: query})
     if (result && result !== undefined && result !== null && result.error == null) {
       setParners(result.data.data.partners)
-      console.log(result.data.data.partners)
-      console.log("here", result.data.data.partners.data[2].attributes.logo.data.attributes.url);
+      // console.log(result.data.data.partners)
+      // console.log(result.data.data.partners.data[2].attributes.logo.data.attributes.url);
+      // console.log("here", result.data.data.partners.data[3].attributes.logo.data.attributes.url);
       // swal({
       //   text: "Data Fetched Successfully",
       //   icon: "success",
@@ -76,7 +77,7 @@ const Testimonials = (props) => {
                   <div className='testimonial'>
                     <div className='testimonial-image'>
                       {' '}
-                      <img src={baseUrl + d?.attributes?.logo?.data?.attributes?.url} alt='' />{' '}
+                      <img src={d?.attributes?.logo?.data?.attributes?.url} alt='' />{' '}
                       {/* <img src={baseUrl + partners?.data[1]?.attributes?.logo?.data?.attributes?.url} alt='' />{' '} */}
                       {/* d?.attributes?.image?.data[0]?.attributes?.url */}
                       {/* partners.data[2].attributes.logo.data.attributes.url */}

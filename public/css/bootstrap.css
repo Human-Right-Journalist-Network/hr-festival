@@ -1639,9 +1639,9 @@ pre code {
 .col-xs-7 {
   width: 58.33333333%;
 }
-.col-xs-6 {
+/* .col-xs-6 {
   width: 50%;
-}
+} */
 .col-xs-5 {
   width: 41.66666667%;
 }

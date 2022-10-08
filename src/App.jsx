@@ -4,7 +4,7 @@ import Header from "./components/header";
 import About from "./components/about";
 import Team from "./components/Team";
 import Features from "./components/features";
-import Gallery from "./components/gallery";
+import { Gallery } from "./components/gallery";
 import Contact from "./components/contact";
 import Testimonials from "./components/testimonials";
 // import Partners from "./components/partners";
