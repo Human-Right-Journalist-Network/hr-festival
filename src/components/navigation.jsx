@@ -8,7 +8,7 @@ const Navigation = () => {
 
   const fetchNavigator = async () => {
     let query = `  query{
-      navigators{
+      navigators(sort:"id:asc"){
         data{
           attributes{
             publishedAt
@@ -56,7 +56,7 @@ const Navigation = () => {
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
             {/* HRJN */}
-            {navigators?.data[6]?.attributes?.title}
+            {navigators?.data[0]?.attributes?.title}
           </a>{' '}
         </div>
 
@@ -67,30 +67,30 @@ const Navigation = () => {
           <ul className='nav navbar-nav navbar-right'>
             <li>
               <a href='#features' className='page-scroll'>
-                {navigators?.data[0]?.attributes?.title}
+                {navigators?.data[1]?.attributes?.title}
                 {/* Feature */}
               </a>
             </li>
             <li>
               <a href='#about' className='page-scroll'>
-                {navigators?.data[1]?.attributes?.title}
+                {navigators?.data[2]?.attributes?.title}
                 
               </a>
             </li>
             <li>
               <a href='#portfolio' className='page-scroll'>
-                {navigators?.data[2]?.attributes?.title}
+                {navigators?.data[3]?.attributes?.title}
               </a>
             </li>
             <li>
               <a href='#team' className='page-scroll'>
-              {navigators?.data[3]?.attributes?.title}
+              {navigators?.data[4]?.attributes?.title}
               
               </a>
             </li>
             <li>
               <a href='#testimonials' className='page-scroll'>
-              {navigators?.data[7]?.attributes?.title}
+              {navigators?.data[5]?.attributes?.title}
               </a>
             </li>
             {/* <li>
@@ -105,7 +105,7 @@ const Navigation = () => {
             </li>*/}
             <li>
               <a href='#contact' className='page-scroll'>
-              {navigators?.data[5]?.attributes?.title}
+              {navigators?.data[6]?.attributes?.title}
               {/* Contact */}
               </a>
             </li>
