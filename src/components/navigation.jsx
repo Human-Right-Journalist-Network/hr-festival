@@ -28,7 +28,7 @@ const Navigation = () => {
     let response = await axios.post(`${baseUrl}/graphql`, { query: query })
     if (response && response !== undefined && response !== null && response.error == null) {
       setNavigation(response.data.data.navigators);
-      // console.log(response.data.data.navigators);
+      console.log("Is it there", response.data.data.navigators.data[0].attributes.logo.data.attributes.url);
       setLoading(false)
     }
   }
@@ -56,8 +56,15 @@ const Navigation = () => {
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
             {/* HRJN */}
-            {navigators?.data[0]?.attributes?.title}
-          </a>{' '}
+            <div style={{"position": "absolute", "fontSize": "20px", "marginLeft": "64px", "paddingTop": "30px"}}>
+              {navigators?.data[0]?.attributes?.title}
+              </div>
+              
+               <img
+              src={navigators?.data[0]?.attributes?.logo.data.attributes.url}
+              className="team-img"
+              alt="" />{" "}
+          </a>
         </div>
 
         <div
