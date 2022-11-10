@@ -208,7 +208,8 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/right.jpeg) center center no-repeat;
+  height: auto;
+  background: url(../img/AHII.jpeg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -244,6 +245,7 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
   font-size: large;
+  padding-left: 100px;
 }
 
 header .intro-text .title{

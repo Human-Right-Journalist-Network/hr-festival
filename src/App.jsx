@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import Navigation from "./components/navigation";
-import Header from "./components/header";
-import About from "./components/about";
+import { Header } from "./components/header";
+import { About } from "./components/about";
 import Team from "./components/Team";
 import Features from "./components/features";
 import { Gallery } from "./components/gallery";
 import Contact from "./components/contact";
-import Testimonials from "./components/testimonials";
-// import Partners from "./components/partners";
+import { Testimonials } from "./components/testimonials";
+import Partners from "./components/partners";
 // import { Services } from "./components/services";
 // import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -35,7 +35,7 @@ const App = () => {
       {/* <Services data={landingPageData.Services} /> */}
       <Gallery data={landingPageData.Gallery}/>
       <Testimonials data={landingPageData.Testimonials} />
-      {/* <Partners data={landingPageData.Partners} /> */}
+      <Partners data={landingPageData.Partners} />
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
     </div>

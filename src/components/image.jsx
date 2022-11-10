@@ -14,7 +14,6 @@ const Image = ({ title, largeImage, smallImage }) => {
           title={title}
           data-lightbox-gallery='gallery1'
         >
-
           <div className='hover-text'>
             <h4>{title}</h4>
           </div>
@@ -23,8 +22,6 @@ const Image = ({ title, largeImage, smallImage }) => {
             className='img-responsive'
             alt={title}
           />
-         
-        
         </a>{' '}
       </div>
     </div>

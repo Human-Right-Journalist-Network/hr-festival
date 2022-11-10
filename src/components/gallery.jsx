@@ -164,16 +164,6 @@ export const Gallery = (props) => {
               ))
               : 'Loading...'}
           </div>
-
-          {/* <div className='portfolio-items'>
-            {galleries?.data
-              ? galleries?.data.map((d, i) => (
-                <div key={`${d?.attribute?.title}-${i}`} className='col-sm-6 col-md-4 col-lg-4'>
-                  <Image title={d?.attribute?.title} largeImage={d.largeImage} smallImage={d.smallImage} />
-                </div>
-              ))
-              : 'Loading...'}
-          </div> */}
         </div>
       </div>
     </div>
