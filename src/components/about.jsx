@@ -131,7 +131,7 @@ export const About = (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>About Us</h2>
+              <h2>About AIHRFF</h2>
                 <div>{props.data ? props.data.paragraph : "loading..."} <br/>
                 <span><b>“To deny people their human rights is to challenge their very humanity” – Nelson Mandela.</b></span>
                 </div>

@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  height: auto;
+  height: 125%;
   background: url(../img/AHII.jpeg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
@@ -218,6 +218,7 @@ a:focus,
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
+  height: inherit;
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -241,7 +242,7 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 350px;
+  padding-top: 500px;
   padding-bottom: 200px;
   text-align: center;
   font-size: large;
