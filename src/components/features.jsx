@@ -9,31 +9,31 @@ const read_more = [
     title: "Film Screening",
     image: "../../img/2nd.jpeg",
     description:
-      "Something Great Getting a new business off the ground is a lot of hard work.",
+      "At AIHRFF, you get the opportunity to showcase any great project you have or have done in the past.",
   },
   {
     title: "Panel Discussions",
     image: "../../img/3rd.jpeg",
     description:
-      "Something Great Getting a new business off the ground is a lot of hard work.",
+      "AIHRFF, proud itself as a ground where new and innovative ideas is discussed and birthed, therefore everyone's idea is welcomed."
   },
   {
     title: "Workshop",
     image: "../../img/work.jpeg",
     description:
-      "Something Great Getting a new business off the ground is a lot of hard work.",
+      "At AIHRFF 2022, participants will undergo exclusive workshops and capacity-building on the following themes."
   },
   {
     title: "Award",
     image: "../../img/last.jpeg",
     description:
-      "At AIHRFF 2022, participants will undergo exclusive workshops and capacity-building on the following themes.",
+      "Awards to be given to exceptional leaders in their various field of endeavour"
   },
   {
     title: "MasterClass",
     image: "../../img/work.jpeg",
     description:
-      "At AIHRFF 2022, participants will undergo exclusive workshops and capacity-building on the following themes.",
+      "At AIHRFF 2022, participants will undergo exclusive masterclass by leaders of industry on the following themes."
   }
 ];
 

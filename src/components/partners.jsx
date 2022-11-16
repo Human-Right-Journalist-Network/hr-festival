@@ -9,7 +9,7 @@ export const Partners = (props) => {
             You can support the festival in any way deem fit. Your support would
             be greatly appreciated and well documentation on how your supports
             are utilized and reports would be available on demand.
-            <b> Please get in touch with us via admin@aihrff.hrjnet.org to support</b>
+            <b> Please get in touch with us via <span style={{ color: "red" }}>admin@aihrff.hrjnet.org to support</span> </b>
           </p>
         </div>
         <div className="row">
